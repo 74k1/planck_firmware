@@ -62,8 +62,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //| LCTL   | Y      | X      | C      | V      | B      | N      | M      | ,      | .      | -      | ENTER  |
         KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, CH_COMM, CH_DOT,  CH_MINS,  KC_ENT,
     //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
-    //|        |        | LALT   | MOD    | LAYER1 | SPACE           | LAYER2 | RALT   |        |        |        |
-        XXXXXXX, XXXXXXX, KC_LALT, KC_LGUI,   MO(1),  KC_SPC,  KC_SPC,   MO(2), KC_RALT, XXXXXXX, XXXXXXX, XXXXXXX
+    //|        |        | LALT   | MOD    | LAYER1 | SPACE           | LAYER2 | ENTER  | RALT   |        |        |
+        XXXXXXX, XXXXXXX, KC_LALT, KC_LGUI,   MO(1),  KC_SPC,  KC_SPC,   MO(2),  KC_ENT, KC_RALT, XXXXXXX, XXXXXXX
     //'-----------------------------------------------------------------------------------------------------------'
     ),
 
@@ -131,7 +131,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //'-----------------------------------------------------------------------------------------------------------'
     ),
 
-    [5] = LAYOUT_planck_grid( // GAMING
+    [5] = LAYOUT_planck_grid( // GAMING / CSGO
     //.-----------------------------------------------------------------------------------------------------------.
     //| ESC    | 1      | 2      | 3      | 4      | 5      | 6      | 7      | 8      | 9      | 0      | <-     |
          KC_ESC,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_BSPC,
@@ -142,8 +142,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //| LSFT   | A      | S      | D      | F      | G      | H      | J      | K      | L      | /      | RSFT   |
         KC_LSFT,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L, CH_SLSH, KC_RSFT,
     //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
-    //| LCTL   | Y      | X      | C      | V      | SPACE           | F13    | ,      | .      | -      | LAYER5 |
-        KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_V,  KC_SPC,  KC_SPC,  KC_F13, CH_COMM, CH_DOT,  CH_MINS,   TG(5)
+    //| LCTL   | Y      | X      | C      | B      | SPACE           | F13    | ,      | .      | -      | LAYER5 |
+        KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_B,  KC_SPC,  KC_SPC,  KC_F13, CH_COMM, CH_DOT,  CH_MINS,   TG(5)
     //'-----------------------------------------------------------------------------------------------------------'
     )
 };
