@@ -31,7 +31,7 @@ This is the hardware, afaik..: (unsorted)
 
 1. Install [QMK](https://docs.qmk.fm/#/newbs) and git
 2. do a `git clone git@github.com:qmk/qmk_firmware.git ~/qmk_firmware`
-3. then do a `git clone git@github.com:74k1/planck_firmware.git ~/qmk_firmware/keyboards/planck/ez/keymaps/74k1`
+3. then do a `git clone git@github.com:74k1/planck_firmware.git ~/qmk_firmware/keyboards/planck/keymaps/74k1`
 4. now you should be able to do a simple: `qmk compile -kb planck/ez/glow -km 74k1`
 5. then flash it with the 
 
