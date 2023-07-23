@@ -62,8 +62,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //| LCTL   | Y      | X      | C      | V      | B      | N      | M      | ,      | .      | -      | ENTER  |
         KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, CH_COMM, CH_DOT,  CH_MINS,  KC_ENT,
     //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
-    //|        |        | LALT   | MOD    | LAYER1 | SPACE           | LAYER2 | ENTER  | RALT   |        |        |
-        XXXXXXX, XXXXXXX, KC_LALT, KC_LGUI,   MO(1),  KC_SPC,  KC_SPC,   MO(2),  KC_ENT, KC_RALT, XXXXXXX, XXXXXXX
+    //| LCTL   |        | LALT   | MOD    | LAYER1 | SPACE           | LAYER2 | ENTER  | RALT   |        |        |
+        KC_LCTL, XXXXXXX, KC_LALT, KC_LGUI,   MO(1),  KC_SPC,  KC_SPC,   MO(2),  KC_ENT, KC_RALT, XXXXXXX, XXXXXXX
     //'-----------------------------------------------------------------------------------------------------------'
     ),
 
@@ -72,14 +72,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //| §      | 1      | 2      | 3      | 4      | 5      | 6      | 7      | 8      | 9      | 0      | <-     |
         CH_SECT,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_BSPC,
     //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
-    //| LSFT   | CAPS   | PrScr  | INS    | UP     |        | LEFT   | DOWN   | UP     | RIGHT  | '      | RSFT   |
-        KC_LSFT, KC_CAPS, KC_PSCR,  KC_INS,   KC_UP, XXXXXXX, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, CH_QUOT, KC_RSFT,
+    //| LSFT   | CAPS   | PrScr  | INS    |        |        | LEFT   | DOWN   | UP     | RIGHT  | '      | RSFT   |
+        KC_LSFT, KC_CAPS, KC_PSCR,  KC_INS, XXXXXXX, XXXXXXX, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, CH_QUOT, KC_RSFT,
     //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
     //| LCTL   |        |        |        |        |        | HOME   | PGDOWN | PGUP   | END    |        |        |
         KC_LCTL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_HOME, KC_PGDN, KC_PGUP,  KC_END, XXXXXXX, XXXXXXX,
     //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
-    //|        |        | LALT   | MOD    | LAYER1 | SPACE           | LAYER3 | RALT   |        |        |        |
-        XXXXXXX, XXXXXXX, KC_LALT, KC_LGUI, _______,  KC_SPC,  KC_SPC,   MO(3), KC_RALT, XXXXXXX, XXXXXXX, XXXXXXX
+    //| LCTL   |        | LALT   | MOD    | LAYER1 | SPACE           | LAYER3 | RALT   |        |        |        |
+        KC_LCTL, XXXXXXX, KC_LALT, KC_LGUI, _______,  KC_SPC,  KC_SPC,   MO(3), KC_RALT, XXXXXXX, XXXXXXX, XXXXXXX
     //'-----------------------------------------------------------------------------------------------------------'
     ),
 
@@ -88,14 +88,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //| ~      | ¦      | @      | #      | °      | $      | `      | |      | '      | ?      | !      | <-     |
         CH_TILD, CH_BRKP,   CH_AT, CH_HASH,  CH_DEG,  CH_DLR,  CH_GRV, CH_PIPE, CH_QUOT, CH_QUES, CH_EXLM, KC_BSPC,
     //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
-    //| LSFT   | <      | {      | [      | (      | \      | /      | )      | ]      | }      | >      | DEL    |
-        KC_LSFT, CH_LABK, CH_LCBR, CH_LBRC, CH_LPRN, CH_BSLS, CH_SLSH, CH_RPRN, CH_RBRC, CH_RCBR, CH_RABK,  KC_DEL,
+    //| CAPS   | <      | {      | [      | (      | \      | /      | )      | ]      | }      | >      | DEL    |
+        KC_CAPS, CH_LABK, CH_LCBR, CH_LBRC, CH_LPRN, CH_BSLS, CH_SLSH, CH_RPRN, CH_RBRC, CH_RCBR, CH_RABK,  KC_DEL,
     //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
     //| LCTL   |        |        | MUTE   | VOL DN | VOL UP | PRV    | PLY    | NXT    |        |        |        |
         KC_LCTL, XXXXXXX, XXXXXXX, KC_MUTE, KC_VOLD, KC_VOLU, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX, XXXXXXX,
     //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
-    //|        |        | LALT   | MOD    | LAYER3 | SPACE           | LAYER2 | RALT   |        |        |        |
-        XXXXXXX, XXXXXXX, KC_LALT, KC_LGUI,   MO(3),  KC_SPC,  KC_SPC, _______, KC_RALT, XXXXXXX, XXXXXXX, XXXXXXX
+    //| LCTL   |        | LALT   | MOD    | LAYER3 | SPACE           | LAYER2 | RALT   |        |        |        |
+        KC_LCTL, XXXXXXX, KC_LALT, KC_LGUI,   MO(3),  KC_SPC,  KC_SPC, _______, KC_RALT, XXXXXXX, XXXXXXX, XXXXXXX
     //'-----------------------------------------------------------------------------------------------------------'
     ),
 
