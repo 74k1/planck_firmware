@@ -87,8 +87,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [2] = LAYOUT_planck_grid( // SPECIALS
     //.-----------------------------------------------------------------------------------------------------------.
-    //| ~      | ¦      | @      | #      | °      | $      | `      | |      | '      | ?      | !      | <-     |
-        CH_TILD, CH_BRKP,   CH_AT, CH_HASH,  CH_DEG,  CH_DLR,  CH_GRV, CH_PIPE, CH_QUOT, CH_QUES, CH_EXLM, KC_BSPC,
+    //| ~      | ^      | @      | #      | °      | $      | `      | |      | '      | ?      | !      | <-     |
+        CH_TILD, CH_CIRC,   CH_AT, CH_HASH,  CH_DEG,  CH_DLR,  CH_GRV, CH_PIPE, CH_QUOT, CH_QUES, CH_EXLM, KC_BSPC,
     //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
     //| CAPS   | <      | [      | {      | (      | \      | /      | )      | }      | ]      | >      | DEL    |
         KC_CAPS, CH_LABK, CH_LBRC, CH_LCBR, CH_LPRN, CH_BSLS, CH_SLSH, CH_RPRN, CH_RCBR, CH_RBRC, CH_RABK,  KC_DEL,
